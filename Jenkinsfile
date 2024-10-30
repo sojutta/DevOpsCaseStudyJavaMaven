@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Build WAR') {
             steps {
-                bat "mvn clean compile"
+                bat "mvn clean package -DskipTests"
             }
         }
         stage('Deploy to Tomcat') {
