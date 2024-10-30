@@ -15,7 +15,12 @@ pipeline {
         //         git branch: 'main', credentialsId: '98e2ce7d-24b8-41fa-9440-6a8f37ced8b1', url: 'https://github.com/sojutta/DevOpsCaseStudyJavaMaven'
         //     }
         // }
-        stage('Build War') {
+        stage('Test') {
+            steps {
+                bat "mvn test"
+            }
+        }
+        stage('Build WAR') {
             steps {
                 bat "mvn clean package"
             }
