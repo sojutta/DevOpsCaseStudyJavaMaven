@@ -33,8 +33,8 @@ pipeline {
                     //sleep(time: 20, unit: 'SECONDS')
                     //bat 'call "%CATALINA_HOME%\\bin\\startup.bat"'
                     //sleep(time: 20, unit: 'SECONDS')
-                    bat "net stop Tomcat9"
-                    bat "net start Tomcat9"
+                    //bat "net stop Tomcat9"
+                    //bat "net start Tomcat9"
                 }
                 
             }
